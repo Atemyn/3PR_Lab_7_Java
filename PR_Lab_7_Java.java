@@ -61,8 +61,7 @@ public class PR_Lab_7_Java{
 
 		building.openWindowsOnFacade();
 		building.closeWindowsOnFacade();
-		/*..........................*/
-		
+		/*..........................*/	
 				
 		/* Возврат значения с плавающей точкой через вспомогательный класс. */
 		System.out.println("\nВозврат значения с плавающей точкой через вспомогательный класс: ");
@@ -72,6 +71,14 @@ public class PR_Lab_7_Java{
 		building.inputBuilding();
 		building.returnStabilityFactor(h);
 		System.out.println("Значение фактора стабильности данного здания: " + h.field);
-		/*................................................................*/
+		/*................................................................*/	
+				
+		/* Проверка использования this в функции AddToBuilding(). */
+		building = new Building();
+		
+		building.inputBuilding();
+		
+		building.addToBuilding(building);
+		/*........................................................*/
 	}
 }
